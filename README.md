@@ -2,6 +2,6 @@
 
 Очень хитрая панель авторизации
 
-![gif](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![gif](gifka.gif)
 
 ![a cat](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
