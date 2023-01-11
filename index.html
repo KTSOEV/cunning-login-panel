@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <title>LOGIN</title>
+</head>
+<body>
+    <form action="/"><br>
+        <h1>LOGIN</h1>
+        <input type="email" name="email" id="email" placeholder="E-mail"><br>
+        <input type="password" name="password" id="password" placeholder="Password"><br>
+        <div class="btn">
+            <input type="submit" name="submit" id="button" value="LOGIN">
+            <script>
+                var a = true;
+                $('#button').on('mouseenter',function(e){
+                    var maxX = $('.btn').width() - $(this).width();
+                    var maxY = $('.btn').height() - $(this).height();
+                    if($('#email').val() == "" || $('#password').val() == ""){
+                        if(a){
+                            a = false;
+                            $(this).css({
+                                'margin-left':-200,
+                            });
+                        }
+                        else{
+                            a = true;
+                            $(this).css({
+                                'margin-left':200,
+                            });
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </form>
+</body>
+</html>
